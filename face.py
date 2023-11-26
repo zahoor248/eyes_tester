@@ -38,7 +38,7 @@ def eye_detection():
     for face in faces:
         shape = predictor(gray, face)
         shape = face_utils.shape_to_np(shape)
-
+  
         left_eye = shape[42:48]
         right_eye = shape[36:42]
 
